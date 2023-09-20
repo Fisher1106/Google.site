@@ -1,0 +1,39 @@
+.topMenu > ul{
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  height: 48px;
+  padding: 0 4px;
+  padding-left: 30px;
+  -webkit-box-flex: 0;
+  line-height: 24px;
+}
+.links{
+  font: 13px/27px Roboto,Arial,sans-serif;
+  margin-right: 15px;
+  color: rgba(0,0,0,.87);
+  text-decoration: none;
+  line-height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.fazerLogin{
+  color: #fff;
+  background: #1a73e8;
+  border: 1px solid transparent;
+  margin-left: 8px;
+  font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: .25px;
+  line-height: 16px;
+  margin-right: 6px;
+  padding: 9px 23px;
+  text-align: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-top: -4px;
+  margin-bottom: 16px;
+}
