@@ -1,27 +1,27 @@
-# GoogleSite
+# Projeto do Site Semelhante ao Google com Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+## Introdução
 
-## Development server
+Neste projeto, desenvolvi um site semelhante ao Google utilizando o framework Angular. O objetivo principal foi criar uma plataforma de busca que proporcionasse uma experiência de usuário semelhante à do Google, incluindo a capacidade de pesquisar na web e exibir resultados relevantes em tempo real.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tecnologias Utilizadas
 
-## Code scaffolding
+- **Angular**: Escolhi o Angular como framework de desenvolvimento de front-end devido à sua robustez, escalabilidade e capacidade de criar aplicativos web modernos e responsivos.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **HTML5 e CSS3**: Utilizei as linguagens padrão da web para estruturar o conteúdo e estilizar a interface do site.
 
-## Build
+- **TypeScript**: O Angular é baseado em TypeScript, o que me permitiu escrever código mais seguro e manutenível.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Funcionalidades Principais
 
-## Running unit tests
+### Barra de Pesquisa
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+A barra de pesquisa é o elemento central do site, permitindo que os usuários digitem suas consultas.
 
-## Running end-to-end tests
+### Resultados de Pesquisa
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+O usuário é redirecionado para uma nova aba do Google, onde os resultados são exibidos.
 
-## Further help
+## Conclusão
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Desenvolver um site semelhante ao Google com Angular foi um projeto desafiador, mas altamente educativo. Aprendi a criar uma interface de usuário interativa e a integrar serviços externos para fornecer resultados de pesquisa em tempo real. Este projeto demonstra minhas habilidades de desenvolvimento web e minha capacidade de trabalhar com tecnologias modernas para criar uma experiência de usuário agradável e funcional. Estou ansioso para continuar aprimorando e expandindo este projeto no futuro.
