@@ -2,29 +2,57 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#30172c">
-<title>Uma surpresa só para você ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#36192f">
+<meta name="description" content="Uma surpresa especial para a Bia, com amor do Dennis e do Samuel.">
+<title>Bia, essa surpresa é para você ❤️</title>
 <style>
-*{box-sizing:border-box}html,body{margin:0;min-height:100%}
-body{min-height:100dvh;display:grid;place-items:center;padding:24px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 20% 5%,#a65c7b 0,transparent 45%),radial-gradient(circle at 90% 95%,#87496f 0,transparent 45%),#30172c;color:#58273c}
-.card{width:min(100%,400px);background:linear-gradient(140deg,#fffaf9,#ffe4eb);border-radius:30px;padding:36px 27px;box-shadow:0 30px 80px #19091299;text-align:center;animation:appear .8s ease both}
-.tag{display:inline-block;border-radius:30px;padding:9px 15px;background:#fbd3e1;color:#a34268;font-size:12px;font-weight:700;letter-spacing:.04em}
-.heart{font-size:76px;display:block;margin:20px auto;filter:drop-shadow(0 8px 10px #e46b8355);animation:beat 1.8s infinite}
-h1{font-size:28px;line-height:1.18;margin:8px 0 24px}p{font-size:17px;line-height:1.65;margin:0 0 17px}
-.love{font-size:26px;font-weight:800;color:#bf3f70;margin:25px 0 14px}
-.small{font-size:12px;color:#a46b80;margin:22px 0 0}
-@keyframes appear{from{transform:translateY(22px) scale(.94);opacity:0}to{transform:none;opacity:1}}
-@keyframes beat{0%,100%{transform:scale(1)}25%{transform:scale(1.13)}45%{transform:scale(1.02)}}
-@media(prefers-reduced-motion:reduce){.card,.heart{animation:none}}
+:root{color-scheme:light}
+*{box-sizing:border-box}
+html{min-height:100%;background:#36192f}
+body{min-height:100dvh;margin:0;padding:24px 17px 34px;display:grid;place-items:center;background:radial-gradient(ellipse at 0% 10%,#7b3c70 0,transparent 55%),radial-gradient(ellipse at 100% 95%,#a7476c 0,transparent 52%),linear-gradient(135deg,#30172c,#52243f);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#54253d}
+.card{width:min(100%,450px);text-align:center;padding:29px 22px 22px;border-radius:29px;background:linear-gradient(160deg,#fff9fb 0%,#ffe7ef 100%);box-shadow:0 25px 85px #13061399}
+.label{display:inline-block;padding:9px 16px;border-radius:99px;color:#9c4166;background:#f9cede;font-size:11px;font-weight:800;letter-spacing:.08em}
+.fruits{margin:22px 0 12px;font-size:61px;letter-spacing:-7px;filter:drop-shadow(0 5px 5px #c46e8840);animation:float 3s ease-in-out infinite}
+h1{margin:8px 0 13px;font-size:clamp(27px,7vw,34px);line-height:1.14;letter-spacing:-.04em}
+.subtitle{font-size:16px;line-height:1.6;color:#78475e;margin:0 auto 21px;max-width:330px}
+button{appearance:none;background:#be416c;color:white;padding:16px 22px;border:0;border-radius:999px;font:800 16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;box-shadow:0 8px 20px #ad4c6b55;cursor:pointer;width:100%;max-width:310px;min-height:54px}
+button:active{transform:scale(.98)}
+#stage[hidden],#start[hidden]{display:none}
+#stage{margin-top:18px;animation:appear .6s ease both}
+video{display:block;width:100%;max-height:67dvh;aspect-ratio:9/16;object-fit:contain;border-radius:18px;background:#190e1b;box-shadow:0 10px 30px #45172d33}
+.hint{font-size:13px;color:#84526c;margin:13px 0 0;line-height:1.5}
+.direct{display:block;color:#a83b69;font-weight:600;font-size:13px;margin-top:13px}
+footer{font-size:13px;color:#a36680;margin-top:24px}
+@keyframes float{50%{transform:translateY(-7px)}}@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
 </head>
-<body><main class="card">
-<div class="tag">💌 UMA MENSAGEM ESPECIAL</div>
-<span class="heart">❤️</span>
-<h1>Tenho uma surpresa para você!</h1>
-<p>Só passei para lembrar que você é muito especial para mim.</p>
-<p>Obrigado por fazer parte da minha vida e deixar meus dias mais bonitos.</p>
-<div class="love">Eu te amo! ❤️</div>
-<div class="small">Feito com carinho, só para você ✨</div>
-</main></body></html>
+<body>
+<main class="card">
+<div class="label">💌 UMA SURPRESA SÓ PRA VOCÊ</div>
+<div class="fruits" aria-hidden="true">🍓🍐🍼</div>
+<h1>Bia, essa surpresa é para você! ❤️</h1>
+<p class="subtitle">A família mais divertida do mundo ganhou uma novela! Com participações especiais de <strong>Dennis, Bia e do pequeno Samuel</strong>. 🎬</p>
+<button id="start" type="button">▶ Assistir à surpresa</button>
+<section id="stage" hidden aria-label="Vídeo da novela da família">
+<video id="video" controls playsinline preload="metadata" aria-label="O Mistério da Chupeta, novela de frutas de 26 segundos">
+<source src="./novela_bia_dennis_samuel.mp4" type="video/mp4">
+Seu navegador não conseguiu reproduzir este vídeo.
+</video>
+<p class="hint">🔊 Ative o som para ouvir a historinha!</p>
+<a class="direct" href="./novela_bia_dennis_samuel.mp4">Não carregou? Abra o vídeo diretamente</a>
+</section>
+<footer>Feito com carinho, para a nossa família. ❤️</footer>
+</main>
+<script>
+(function(){
+const start=document.getElementById('start'),stage=document.getElementById('stage'),video=document.getElementById('video');
+start.addEventListener('click',function(){
+ start.hidden=true;stage.hidden=false;
+ try{const p=video.play();if(p&&p.catch){p.catch(function(){video.controls=true;});}}catch(e){}
+});
+})();
+</script>
+</body>
+</html>
